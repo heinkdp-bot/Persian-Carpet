@@ -20,10 +20,10 @@ export default function HomePage() {
 
   return (
     <div>
-      <section className="mx-auto grid max-w-7xl items-center gap-10 px-5 py-10 md:grid-cols-[1.05fr_0.95fr] md:gap-16 md:px-8 md:py-16">
+      <section className="mx-auto grid max-w-7xl items-center gap-8 px-5 py-8 md:grid-cols-2 md:gap-14 md:px-8 md:py-10">
         <Link
           href={productHref(hero)}
-          className="relative block aspect-[3/4] overflow-hidden bg-sand"
+          className="relative block aspect-[3/4] overflow-hidden bg-sand md:aspect-auto md:h-[calc(100dvh-7.5rem)]"
         >
           <CarpetImage
             src={productImageSrc(hero)}
