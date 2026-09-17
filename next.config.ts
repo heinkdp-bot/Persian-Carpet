@@ -4,6 +4,7 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
   },
+  agentRules: false,
 };
 
 export default nextConfig;

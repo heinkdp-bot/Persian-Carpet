@@ -48,7 +48,7 @@ export function CarpetCard({
             </h3>
             <p className="mt-1 text-sm text-muted">{formatSize(product)}</p>
           </div>
-          <PriceTag amount={product.price_zar} size="sm" align="left" />
+          <PriceTag amount={product.price_zar} size="sm" showDisclaimer={false} />
         </div>
       </article>
     </Link>

@@ -59,7 +59,7 @@ export default async function TypePage({
 
       {featured ? (
         <section className="mx-auto mt-10 grid max-w-7xl items-center gap-8 px-5 md:grid-cols-[1.15fr_0.85fr] md:px-8">
-          <Link href={productHref(featured)} className="relative block aspect-[3/4] overflow-hidden bg-sand md:aspect-[4/5]">
+          <Link href={productHref(featured)} className="relative block aspect-[3/4] overflow-hidden bg-sand">
             <CarpetImage
               src={productImageSrc(featured)}
               alt={productLabel(featured)}

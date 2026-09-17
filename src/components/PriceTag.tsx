@@ -5,10 +5,12 @@ export function PriceTag({
   amount,
   size = "md",
   align = "left",
+  showDisclaimer = true,
 }: {
   amount: number;
   size?: "sm" | "md" | "lg";
   align?: "left" | "center";
+  showDisclaimer?: boolean;
 }) {
   const priceClass =
     size === "lg"
@@ -22,9 +24,11 @@ export function PriceTag({
       <p className={`font-medium tracking-tight text-ink ${priceClass}`}>
         {formatZar(amount)}
       </p>
-      <p className="mt-1 text-[11px] leading-snug tracking-wide text-muted">
-        {PRICE_DISCLAIMER}
-      </p>
+      {showDisclaimer ? (
+        <p className="mt-1 text-[11px] leading-snug tracking-wide text-muted">
+          {PRICE_DISCLAIMER}
+        </p>
+      ) : null}
     </div>
   );
 }
